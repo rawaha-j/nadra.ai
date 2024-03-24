@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget Demo</title>
+    <!-- Include the Botpress WebChat script -->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('background.png'); /* Replace 'your-background-image.png' with your image path */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #webchat {
+            max-width: 600px; /* Adjust as needed */
+            width: 100%;
+            height: 80vh; /* Adjust as needed */
+            background-color: transparent; /* Set background color to transparent */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for the chat widget */
+            overflow: hidden;
+            padding-bottom: 5vh; /* Add padding to the bottom (5% of viewport height) */
+        }
+    </style>
+</head>
+<body>
+    <!-- Placeholder for the Chat Widget -->
+    <div id="webchat"></div>
+
+    <script>
+        // Initialize Botpress WebChat
+        window.botpressWebChat.init({
+            "composerPlaceholder": "Chat with nadra_ai",
+            "botConversationDescription": "Nadra_ai",
+            "botId": "5b7feca8-41b0-42b7-a60f-4bbeb6ad9bce",
+            "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+            "messagingUrl": "https://messaging.botpress.cloud",
+            "clientId": "5b7feca8-41b0-42b7-a60f-4bbeb6ad9bce",
+            "webhookId": "56e733ee-d04c-4481-9ff4-a4f3287fbb3d",
+            "lazySocket": true,
+            "themeName": "prism",
+            "botName": "nadra_ai",
+            "frontendVersion": "v1",
+            "useSessionStorage": true,
+            "theme": "prism",
+            "themeColor": "#2563eb"
+        });
+    </script>
+</body>
+</html>
