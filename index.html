@@ -33,24 +33,24 @@
     <!-- Placeholder for the Chat Widget -->
     <div id="webchat"></div>
 
-    <script>
-        // Initialize Botpress WebChat
-        window.botpressWebChat.init({
-            "composerPlaceholder": "Chat with nadra_ai",
-            "botConversationDescription": "Nadra_ai",
-            "botId": "5b7feca8-41b0-42b7-a60f-4bbeb6ad9bce",
-            "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
-            "messagingUrl": "https://messaging.botpress.cloud",
-            "clientId": "5b7feca8-41b0-42b7-a60f-4bbeb6ad9bce",
-            "webhookId": "56e733ee-d04c-4481-9ff4-a4f3287fbb3d",
-            "lazySocket": true,
-            "themeName": "prism",
-            "botName": "nadra_ai",
-            "frontendVersion": "v1",
-            "useSessionStorage": true,
-            "theme": "prism",
-            "themeColor": "#2563eb"
-        });
-    </script>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Chat with nadra_ai",
+      "botConversationDescription": "nadra_ai",
+      "botId": "5b7feca8-41b0-42b7-a60f-4bbeb6ad9bce",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "5b7feca8-41b0-42b7-a60f-4bbeb6ad9bce",
+      "webhookId": "56e733ee-d04c-4481-9ff4-a4f3287fbb3d",
+      "lazySocket": true,
+      "themeName": "prism",
+      "botName": "nadra_ai",
+      "frontendVersion": "v1",
+      "useSessionStorage": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+  });
+</script>
 </body>
 </html>
